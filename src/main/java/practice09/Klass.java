@@ -36,4 +36,7 @@ public class Klass {
     public void appendMember(Student jerry) {
         members.add(jerry);
     }
+
+    public void setTeacher(String name) {
+    }
 }

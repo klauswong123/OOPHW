@@ -27,7 +27,6 @@ public class Teacher extends Person{
         for (Klass singleKlass : this.klass){
             teachClass.add(singleKlass.getNumber());
         }
-        System.out.println(teachClass);
         return teachClass.size()>0?String.format("My name is %s. I am %d years old. I am a Teacher. I teach Class %s.", super.getName()
                 , super.getAge(), teachClass.stream().map(teachc->teachc.toString()).collect(Collectors.joining(", "))):
                 String.format("My name is %s. I am %d years old. I am a Teacher. I teach No Class.", super.getName(), super.getAge());
