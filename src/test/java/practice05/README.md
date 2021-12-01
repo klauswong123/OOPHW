@@ -14,7 +14,7 @@
     Besides `name` and `age` attributes, the `Teacher` class also should have`klass` attributes. 
     There is also an `introduce` method,
     if the `klass` attribute is null , the `introduce` should return:
-    >My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.
+    >My name is Tom. I am 21 years old. I am a Teachre. I teach No Class.
 
     otherwise, the `introduce` should return:
 
