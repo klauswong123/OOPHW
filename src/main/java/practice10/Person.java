@@ -10,6 +10,10 @@ public class Person {
         this.id = id;
     }
 
+    public boolean equals(Object obj){
+        return this.id==((Person)obj).getID();
+    }
+
     public String getName() {
         return name;
     }
