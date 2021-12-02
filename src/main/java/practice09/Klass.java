@@ -15,7 +15,7 @@ public class Klass {
         if (members.contains(leader)){
             this.leader=leader;
         } else{
-            System.out.printf("It is not one of us.\n");
+            System.out.print("It is not one of us.\n");
         }
 
     }

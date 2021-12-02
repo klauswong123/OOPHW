@@ -2,10 +2,10 @@ package practice08;
 
 public class Teacher extends Person{
     private Klass klass;
-    public Teacher(Integer id, String name, int age, Object... klass) {
+    public Teacher(Integer id, String name, int age, Klass... klass) {
         super(id,name, age);
         if (klass.length==1){
-            this.klass = (Klass)klass[0];
+            this.klass = klass[0];
         }
     }
 
@@ -13,6 +13,7 @@ public class Teacher extends Person{
         return klass;
     }
 
+    @Override
     public String introduce() {
         return klass == null?String.format("My name is %s. I am %d years old. I am a Teacher. I teach No Class.", super.getName(), super.getAge()):
                 String.format("My name is %s. I am %d years old. I am a Teacher. I teach Class %d.", super.getName(), super.getAge(), this.klass.getNumber());

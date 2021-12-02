@@ -11,6 +11,7 @@ public class Student extends Person{
         return this.klass;
     }
 
+    @Override
     public String introduce() {
         if (this.klass.getLeader()==null){
             return String.format("%s I am a Student. I am at Class %d.",super.introduce() ,this.klass.getNumber());

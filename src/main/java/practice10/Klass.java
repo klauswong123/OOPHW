@@ -17,7 +17,7 @@ public class Klass {
             this.leader=leader;
             System.out.printf("I am %s. I know %s become Leader of Class %d.\n",this.teacher, leader.getName(), this.klass);
         } else{
-            System.out.printf("It is not one of us.\n");
+            System.out.print("It is not one of us.\n");
         }
 
     }
@@ -26,9 +26,6 @@ public class Klass {
         this.teacher=teacherName;
     }
 
-    public String getTeacher(){
-        return this.teacher;
-    }
     public Student getLeader(){
         return this.leader;
     }
